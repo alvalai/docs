@@ -1,0 +1,16 @@
+<!-- 
+  you can use routerLink to statically describe a navigation. routerLinkActive let's you
+  provide a css class name that will get added when the route is active. If you want to add
+  the css class only when the url matches the route exactly then you can add {exact: true}
+-->
+<a href=""
+  routerLink="lazy-feature"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{exact: true}">
+Get me to the feature!
+</a>
+<br>
+<button (click)="navigateToLazyfeature()">get me to the feature programmatically</button>
+<!-- this is where angular will display the view that has been loaded by the router -->
+<br>
+<router-outlet></router-outlet>
